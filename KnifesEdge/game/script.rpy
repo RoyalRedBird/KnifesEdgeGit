@@ -22,7 +22,6 @@ define abrakse = Character("Abrakse")
 #NVL Mode Characters
 
 define nvlNar = nvl_narrator
-define menu = nvl_menu
 
 #Core Duo
 define okraNvl = Character("Okra", kind=nvl)
@@ -213,7 +212,7 @@ label okraPrologue:
 
     nvlNar "(Or six, or seven, getting to bed after binging The Owl House last night was a bit of a chore.)"
 
-    menu:
+    menu (nvl=True):
 
         nvlNar "You're currently tucked into bed all warm and comfy like, perhaps a bit too comfy, you kinda don't want to get out of bed, but you have plans. Not big plans, but plans nonetheless."
 
@@ -225,7 +224,7 @@ label okraPrologue:
 
             nvlNar "A few minutes pass and the desire to not get out of bed grows somewhat, but so does the desire to get out of bed. It's been fun, but you still have things to do."
 
-
+    define menu = menu
     
 
 

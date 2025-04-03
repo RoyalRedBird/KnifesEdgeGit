@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 216: expected statement.
-    nvlMenu:
-           ^
+File "game/script.rpy", line 215: expected statement.
+    nvl_menu:
+            ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Apr  3 15:27:30 2025
+Thu Apr  3 15:38:03 2025
