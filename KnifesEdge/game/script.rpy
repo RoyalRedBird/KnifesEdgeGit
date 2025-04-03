@@ -3,17 +3,48 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
 define e = Character("Eileen")
 
+#Core Duo
 define okra = Character("Okra")
 define ainhra = Character("Ainhra")
 
+#Fight Duo
 define zirkli = Character("Zirkli")
 define caimil = Character("Caimil")
 
+#Mean Girl Trio
 define kaii = Character("Kaii")
 define lyrdae = Character("Lyrdae")
 define abrakse = Character("Abrakse")
+
+#NVL Mode Characters
+
+define nvlNar = nvl_narrator
+define menu = nvl_menu
+
+#Core Duo
+define okraNvl = Character("Okra", kind=nvl)
+define ainhraNvl = Character("Ainhra", kind=nvl)
+
+#Fight Duo
+define zirkliNvl = Character("Zirkli", kind=nvl)
+define caimilNvl = Character("Caimil", kind=nvl)
+
+#Mean Girl Trio
+define kaiiNvl = Character("Kaii", kind=nvl)
+define lyrdaeNvl = Character("Lyrdae", kind=nvl)
+define abrakseNvl = Character("Abrakse", kind=nvl)
+
+#Flags
+default TrioLore = False
+default CaimilPunch = False
+default UkhroLore = False
+default ArtShare = False
+
+default ZirCaiEpilogue = False
+default TrioEpilogue = False
 
 
 # The game starts here.
@@ -140,6 +171,32 @@ label start:
 
     # These display lines of dialogue.
 
+    "Welcome to Knife's Edge!"
+
+    "Before we begin, a few conent warnings for the audience..."
+
+    "This game contains the following: "
+
+    "Violence against/between minors. \nDepictions of sensory overload. \nMishandling of sensory overload. \nDemonic posession. \nThe R-Slur."
+
+    "With that out of the way..."
+
+    "Our story follows the desperate escapades of two kids that have found themselves in the crosshairs of some rather powerful people"
+
+    "They must navigate the winding underground beneath the city of Solstrum to evade the wrath of their pursuers."
+
+    "But our story has to start somewhere, so..."
+
+    menu:
+
+        "Who's do you wish to start this story with?"
+
+        "Child of Grushnakh":
+            jump okraPrologue
+
+        "Child of Illendril":
+            jump ainhraPrologue
+
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
@@ -147,3 +204,32 @@ label start:
     # This ends the game.
 
     return
+
+label okraPrologue:
+
+    nvl show dissolve
+
+    nvlNar "Its a warm and rather sunny Wednesday morning, the sun is shining through your blinds as you rouse yourself from your eight hour slumber."
+
+    nvlNar "(Or six, or seven, getting to bed after binging The Owl House last night was a bit of a chore.)"
+
+    menu:
+
+        nvlNar "You're currently tucked into bed all warm and comfy like, perhaps a bit too comfy, you kinda don't want to get out of bed, but you have plans. Not big plans, but plans nonetheless."
+
+        "Get out of bed.":
+            nvlNar "As comfy as your bed might be, you have things to do."
+
+        "Sleep in":
+            nvlNar "You decide the day can wait just a bit longer as you close your eyes again for a few more minutes of sleep. It may be a Wednesday, but its a Wednesday in July, so there's nothing to worry about."
+
+            nvlNar "A few minutes pass and the desire to not get out of bed grows somewhat, but so does the desire to get out of bed. It's been fun, but you still have things to do."
+
+
+    
+
+
+label ainhraPrologue:
+
+    nvlNar "Still not done aaaaaaaaaaa"
+
