@@ -224,7 +224,10 @@ label okraPrologue:
 
             nvlNar "A few minutes pass and the desire to not get out of bed grows somewhat, but so does the desire to get out of bed. It's been fun, but you still have things to do."
 
-    define menu = menu
+    "You push your blanket off of you, the cool of your air-conditioned room washes over your skin, its refreshing if a slight jolt to the senses."
+
+    "Your room on the other hand is bathed in the 9AM glow of the sun. Perfectly lit without the need to turn on your light."
+
     
 
 
