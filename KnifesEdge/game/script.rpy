@@ -542,11 +542,210 @@ label badend1:
 
 label act1part3:
 
+    okra "Ooo! Sweet! What kind is it? If you don't mind."
 
+    ainhra "It's a 13 inch screen tablet, 2.5k, spent like two weeks trying to figure out which one to get."
 
+    ainhra "It's no Wowcom, but it's still pretty cool!"
+
+    ainhra "But yeah! Once we get out of here it'll be {i}all mine.{/i}"
+
+    okra "Well... Since you're the artsy type..."
+
+    ainhra "Hm?"
+
+    okra "Can I see your drawings?"
+
+    ainhra "..."
+
+    "Ainhra's eyes widen at the idea. Immediately pulling out his phone."
+
+    ainhra "Behold!"
+
+    "Ainhra shows off all of his recent work to Okra, swiping through dozens of his illustrations."
+
+    "A lot of it is very Studio Trigger-esque, with only one or two 'realistic' portraits to see."
+
+    "Okra, simply put, is mesmerized."
+
+    okra "Oh my god this is so {i}cool!{/i}"
+
+    ainhra "And this is just the start!"
+
+    "Ainhra opens up another app, an online comic hosting site. Luckily it still runs offline."
+
+    "He pulls up a manga by the name of 'Starswirl vs. The End of Time' a maagical girl sort of thing with some light eldritch trappings."
+
+    "A manga illustrated by {i}Ainhra Sydrillen.{/i}"
+
+    ainhra "It's nowhere near done but it's coming along!"
+
+    okra "Dude..."
     
+    okra "Holy shit..."
 
+    "Ainhra is beaming at this point."
 
+    ainhra "Heh! Glad you like it!"
 
+    ainhra "{i}causeispentlikefourmonthsonthis{/i}"
 
+    ainhra "But enough about me, what about you?"
 
+    okra "What {i}about{/i} me?"
+
+    ainhra "Like, you know... What do you get up to?"
+
+    okra "I mean... I know this sounds pretty stereotypical of me but I'd say I'm pretty good at dueling."
+
+    ainhra "Ooo..."
+
+    okra "Almost all the other orcs my age can't really keep up with me, I'm kind of a terror at the rec center if you know what I mean."
+
+    ainhra "So you're just that good?"
+
+    okra "I mean yeah! And I do {i}like{/i} fighting, its a good workout and it keeps you on your toes."
+
+    okra "But it's not everything I am."
+
+    okra "{i}I also really, really, really like The Owl Lodge.{/i}"
+
+    okra "{i}And Aquaphibia.{/i}"
+
+    okra "{i}Pretty much everything that comes out of Walt Studios if I'm gonna be honest.{/i}"
+
+    ainhra "Wait really!? I fuckin' love The Owl Lodge!"
+
+    okra "You do?!"
+
+    ainhra "Heck yeah! I may be a weeb but I'm not one to disparage the great Danilla Terraco!"
+
+    ainhra "{i}But Walt Studios can go rot in the howling dark for what they did.{/i}"
+
+    okra "Oh absolutely! Don't even get me started on the Outside In 2 debacle."
+
+    ainhra "..."
+
+    okra "..."
+
+    ainhra "{b}{i}Yo have you seen her new show with those other guys online?!?!{/b}{/i}"
+
+    okra "{b}{i}How can't I? I can't wait!{/b}{/i}"
+
+    nvl show dissolve
+
+    nvlNar "As the two make their way through the sewers, they continue to yap about animation, their favorite shows, and the state of the Walt Company."
+
+    nvlNar "And yap."
+
+    nvlNAr "And yap..."
+
+    nvlNar "{i}And yap...{/i}"
+
+    nvlNar "And it keeps going for a while..."
+
+    nvlNar "Until eventually..."
+
+    nvl hide dissolve
+
+    okra "But you really haven't seen Aquaphibia yet?"
+
+    ainhra "I KNOW I need to see it but I still need to get around to a lot of stuff and-"
+
+    "Ainhra hears something just up ahead."
+
+    ainhra "Okra shh."
+
+    okra "!!!"
+
+    "The two huddle behind the nearest corner, listening for something?"
+
+    ainhra "You hear that right?"
+
+    "Its the sound of chatter, two girls down the tunnel."
+
+    okra "Yeah I hear them too..."
+
+    "The two try and listen into what they're talking about."
+
+    "Hobgoblin" "You sure they're still down here? We've been stuck in this hellhole for an hour."
+
+    "Faerie" "Yup! This place is a maze and I don't think they could get that far down here."
+
+    "Faerie" "Still, you know we could just... leave?"
+
+    "Faerie" "Cut, run and hope for the best?"
+
+    "Hobgoblin" "With {i}her{/i} breathing down our necks? I doubt it."
+
+    "Hobgoblin" "Crossing her is a bad idea and I really don't want to go back to juvie again, {i}especially{/i} if it's 'cause of her."
+
+    "Faerie" "That's true. {i}Ugh.{/i}"
+
+    "Faerie" "I just don't want to get into any more trouble than we have to okay?"
+
+    "Hobgoblin" "{i}*Sigh*{/i} I know Cai, but so far the bare minimum seems to be breaking a few kneecaps."
+
+    "Hobgoblin" "And you know I want to be down here just as much as you do."
+
+    "Faerie" "I know. But at least I'm stuck here with you!"
+
+    "Hobgoblin" "And I woudn't want it any other way."
+
+    "From what you two can gather, it looks like they want to be down here as much as you."
+
+    "Not at all."
+
+    okra "Maybe... We could talk to them? Try and bargain our way out of this?"
+
+    ainhra "We could, but why not seize the initiative? Ambush 'em?"
+
+    okra "Ngh... I'd rather not. Neither of us want to be here and I'd just feel dirty doing that."
+
+    ainhra "Fine. And sneaking around them is out of the question. There isn't much 'around' to sneak through down here."
+
+    ainhra "I just hope they're reasonable."
+
+    okra "Fingers crossed!"
+
+    "With their minds made up, they make their approach."
+
+    "And the two girls don't look particularlly thrilled to see them."
+
+    "Hobgoblin" "Ah crap..."
+
+    okra "Heyyyy..."
+
+    ainhra "Yo."
+
+    "Faerie" "Yo..."
+
+    "Hobgoblin" "..."
+
+    "Hobgoblin" "Were you listening in on us?"
+
+    okra "For a bit."
+
+    "Hobgoblin" "For how long?"
+
+    ainhra "About a minute."
+
+    "Hobgoblin" "Then I guess you know why we're here then?"
+
+    okra "Yup."
+
+    "Hobgoblin" "Then why even reveal yourself?"
+
+    okra "Well you don't want to be here, and we want to get out of here. So maybe we could talk this out? Walk away peacefully?"
+
+    "Faerie" "{i}*Sigh.{/i} If only..."
+
+    "Hobgoblin" "Look. You guys seem okay, and I'd also like to go home."
+
+    "Hobgoblin" "But we don't have a choice here."
+
+    "Hobgoblin" "Our boss..."
+
+    "Faerie" "Has us by the throat. Proverbially and literally speaking."
+
+    "Faerie" "And she wants what you have, all of it. Preferably by way of extreme and unreasonable levels of force."
