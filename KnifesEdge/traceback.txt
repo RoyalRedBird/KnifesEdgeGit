@@ -1,38 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 195, in script
-    python:
-  File "renpy/common/00start.rpy", line 196, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 37, in execute_default
-    default TrioLore = false
-  File "game/script.rpy", line 37, in <module>
-    default TrioLore = false
-NameError: name 'false' is not defined
+  File "game/script.rpy", line 273, in script
+    Orc "Ow..."
+Exception: Sayer 'Orc' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 195, in script
-    python:
-  File "D:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\RenPy\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 196, in <module>
-    renpy.execute_default_statement(True)
-  File "D:\RenPy\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
-    i.execute_default(start)
-  File "game/script.rpy", line 37, in execute_default
-    default TrioLore = false
-  File "D:\RenPy\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 37, in <module>
-    default TrioLore = false
-NameError: name 'false' is not defined
+  File "game/script.rpy", line 273, in script
+    Orc "Ow..."
+  File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Orc' is not defined.
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 KnifesEdge 1.0
-Thu Apr  3 15:22:40 2025
+Thu Apr  3 23:23:03 2025

@@ -41,6 +41,7 @@ default TrioLore = False
 default CaimilPunch = False
 default UkhroLore = False
 default ArtShare = False
+default OkraPunch = False
 
 default ZirCaiEpilogue = False
 default TrioEpilogue = False
@@ -196,6 +197,9 @@ label start:
         "Child of Illendril":
             jump ainhraPrologue
 
+        "No time, get me to the start.":
+            jump act1part1
+
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
@@ -234,4 +238,315 @@ label okraPrologue:
 label ainhraPrologue:
 
     nvlNar "Still not done aaaaaaaaaaa"
+
+
+label act1part1:
+
+    "Today was supposed to be straightforward."
+
+    "A warm, summer Wednesday afternoon just like all the rest."
+
+    "But fate, or what have you, had other plans today. For today you are being hunted, the mark for a band of delinquents."
+
+    "Delinquents who will stop at nothing to see you crushed under heel and stripped of anything valuable."
+
+    "In their pursuit, you manage to lose them by entering the underground tunnels."
+
+    "But with the route back no doubt being watched by your pursuers, there is nowhere else to go but further into the tunnels."
+
+    #Fade in to tunnels goes here.
+
+    "You've spent the past half-hour walking through these tunnels and you haven't even managed to find natural light, let alone an exit."
+
+    "And the buzzing of the lights is getting to your head and the smell just makes it even worse."
+
+    "You wonder if you're even gonna make it out of this place, reception is non-existent here and these tunnels are already a winding labyrinth."
+
+    "If you end up lost here it might just mean the end of you."
+
+    "Your head stirs with dread as the thought of you never making it out of here seems more and more real."
+
+    "You're almost get lost in your own head for a moment, when suddenly..."
+
+    #BANG!
+
+    "Orc" "Ow..."
+
+    "HalfElf" "Ngh... my {i}brain...{/i}"
+
+    "Orc" "{b}{i}!!!{/i}{/b}"
+
+    "HalfElf" "{b}{i}!!!{/i}{/b}"
+
+    "Orc" "Wait a minute..."
+
+    "Orc" "You aren't with {i}them{/i} are you?"
+
+    "HalfElf" "Them? Them who?"
+
+    "Orc" "The drow, fox and the devil? They chased me in here!"
+
+    "HalfElf" "Wait {b}THEM?{/b} They're the reason I'm down here too!"
+
+    "HalfElf" "I barely got down here in one piece..."
+
+    "Orc" "Wait really?"
+
+    "The two share a look of relief"
+
+    "Orc" "So you aren't trying to mug me?"
+
+    "HalfElf" "Nope, just running. And running and running away."
+
+    "HalfElf" "And then I ran into you. Sorry."
+
+    "Orc" "Ah! It's fine it didn't even hurt that bad don't worry!"
+
+    "HalfElf" "That's cool."
+
+    "HalfElf" "Say... Since we're in this mess together..."
+
+    "HalfElf" "Wanna team? If you want."
+
+    "Orc" "Heck yeah I wanna team! I don't wanna be down here alone!"
+
+    "HalfElf" "Woo! Thank Illendril..."
+
+    "HalfElf" "Though uh... What's your name?"
+
+    okra "Ah uh... It's Okra."
+
+    ainhra "Ainhra! Nice to meet 'ya!"
+
+    ainhra "Since were basically fighting for our lives down here, what can you do?"
+
+    okra "I'm pretty good with a sparring axe, but I can work with my fists if I have to. What about you?"
+
+    ainhra "Well, you could say I have a few tricks up my sleeve..."
+
+    okra "Like?"
+
+    "Ainhra summons a magical ball of energy in his hand."
+
+    okra "..."
+
+    okra "Cool!"
+
+    ainhra "I only got my M-1 license a few months ago, but I know a bit of force magic."
+
+    okra "Sweet! Though uh... you got any ideas on how to get out of here?"
+
+    ainhra "Hmm..."
+
+    okra "Please tell me you have something I've been stuck here for half an hour and I'm still lost."
+
+    ainhra "Well I don't exactly know where I am either but I think I passed by an enterance to the sewers?"
+
+    "Okra tenses up at the thought of having to even be in the sewers."
+
+    okra "Well it's something, lead the way."
+
+    "Some time passes, they get twisted and turned around amidst the myriad tunnels beneath the city."
+
+    "But eventually, they do find a way into the sewer network!"
+
+    "And still, the wandering continues."
+
+    "And continues."
+
+    "And continues."
+
+    ainhra "..."
+
+    ainhra "So..."
+
+    okra "Hm?"
+
+    ainhra "How'd you end up here? In the {i}labyrinth?{/i}"
+
+    okra "Well..."
+
+    okra "I got out of bed, left the house."
+
+    ainhra "Mhm..."
+
+    okra "And then I went on a walk..."
+
+    okra "And then I got cornered... And I got scared..."
+
+    okra "And then I {i}punchedherintheface.{/i}"
+
+    okra "And ran."
+
+    okra "Away."
+
+    okra "Into the tunnels."
+
+    menu:
+
+        "Ainhra: Literally just a walk?":
+            $ OkraPunch = False
+            jump act1part1
+
+        "Ainhra: Wait you hit her?!":
+            jump okraPunch
+
+
+
+label okraPunch:
+
+    $ OkraPunch = True
+
+    ainhra "Wait you {i}hit{/i} her?!"
+
+    okra "What was I supposed to do?! They were all right against my face and I got scared and I didn't wanna give them my wallet or my phone or my shoes so I just sorta..."
+
+    okra "{i}Decked her in the face.{/i}"
+
+    ainhra "I see."
+
+    okra "And then I ran! And they almost caught me before I managed to find a way in here."
+
+    okra "So yeah."
+
+    okra "Also I'm fairly sure that devil was looking for a fight. Judging by the unhinged grin on her face while she was chasin' me."
+
+    ainhra "Huh, that's terrifying."
+
+    ainhra "But anyway, I'm honestly surprised you managed to get away. All things considered."
+
+    okra "You know what? I am too."
+
+    okra "But yeah, I ran and ran, found a door to the underground and barricaded myself in."
+
+    okra "I waited for them to leave and I tried to get out but the door jammed."
+
+    okra "And now I'm here."
+
+    okra "Though how did you get away from them?"
+
+    ainhra "Oh I just ran and ran and ran."
+
+    ainhra "They didn't even try and shake me down they just yelled 'That's him! Get him!' and started chasing me."
+
+    ainhra "I found my own way down here and kept running and running."
+
+    okra "And then you ran into me!"
+
+    ainhra "Exactly!"
+
+    okra "Dang. Guess we're both lucky or cursed."
+
+    ainhra "Maybe..."
+
+    jump act1part2
+
+
+label act1part2:
+
+    if OkraPunch == True:
+        ainhra "So you were {i}just{/i} walking around when you got jumped?"
+
+    else:
+        ainhra "Literally just a walk?"
+
+    okra "{i}What do you mean?{/i}"
+
+    ainhra "You didn't have something in mind? Like at all?"
+
+    okra "{i}No?{/i} I just wanted to get out of the house."
+
+    ainhra "..."
+
+    ainhra "{i}Why?{/i}"
+
+    okra "What do you mean why? People go on walks all the time and today is good day for a walk and the sun's out and the sky is bright and {i}everything was supposed to be normal but it's not and now I'm here being chased by gangsters.{/i}"
+
+    ainhra "Hey! I didn't mean it like that. I just don't really get out of the house just to touch grass."
+
+    okra "Touch grass?"
+
+    ainhra "Wait you don't know what that means?"
+
+    okra "I know what touching grass means but why'd you have to phrase it like that?"
+
+    ainhra "Well I- I just..."
+
+    okra "Do you even know what the sun is?"
+
+    ainhra "Of course I know what the sun is! I j-"
+
+    ainhra "..."
+
+    ainhra "Look I just go outside to get reference photos and go home. Usually anway."
+
+    okra "References? Like for art?"
+
+    ainhra "Yeah!"
+
+    okra "Ah! So that's what you were doing?"
+
+    ainhra "Well, not today."
+
+    ainhra "My new screen tablet got dropped off at my art store and I {i}wanted{/i} to go grab it."
+
+    ainhra "But then... {i}this{/1} happened."
+
+    menu:
+
+        "Okra: Ooo! Sweet!":
+            jump act1part3
+
+        "Okra: That sounds {i}lame.{/i}":
+            jump badend1
+
+
+label badend1:
+
+    okra "That sounds {i}lame.{/i}"
+
+    ainhra "I'm- I'm sorry?!"
+
+    okra "I said what I said. And I said that sounds {i}cringe.{/i}"
+
+    ainhra "..."
+
+    ainhra "You take that back right now..."
+
+    okra "Nah. What you're talking about sounds like nerd shit."
+
+    ainhra "..........."
+
+    ainhra "Well fuck you then."
+
+    okra "Fuck you too!"
+
+    "Okra and Ainhra" "Hmph!"
+
+    nvl show dissolve
+
+    nvlNar "As the temprary bond between the two kids breaks down at lightspeed, they storm away from each other in a huff."
+
+    nvlNar "Okra heads back to the access corridors, Ainhra heads further into the sewers."
+
+    nvlNar "Some time passes and Okra's emotions start to simmer down."
+
+    nvlNar "And as his calm returns to him, a sense of regret washes over him, and a thought enters his mind."
+
+    nvlNar "'Why did I even say that?!'"
+
+    nvlNar "Bad Ending #1"
+
+    renpy.full_restart()
+
+
+label act1part3:
+
+
+
+    
+
+
+
+
 
