@@ -386,7 +386,7 @@ label act1part1:
 
         "Ainhra: Literally just a walk?":
             $ OkraPunch = False
-            jump act1part1
+            jump act1part2
 
         "Ainhra: Wait you hit her?!":
             jump okraPunch
@@ -478,7 +478,7 @@ label act1part2:
 
     ainhra "..."
 
-    ainhra "Look I just go outside to get reference photos and go home. Usually anway."
+    ainhra "Look I just go outside to get reference photos and go home. Usually anyway."
 
     okra "References? Like for art?"
 
@@ -537,7 +537,7 @@ label badend1:
 
     nvlNar "Bad Ending #1"
 
-    renpy.full_restart()
+    return
 
 
 label act1part3:
