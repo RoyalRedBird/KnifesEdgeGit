@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 540: expected statement.
-    renpy.full_restart();
-                        ^
+File "game/script.rpy", line 1007: expected menuitem
+    if CaimilPunch == False:
+    ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Apr  3 23:50:44 2025
+Sat Apr  5 23:10:19 2025

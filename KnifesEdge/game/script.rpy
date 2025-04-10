@@ -39,6 +39,7 @@ define abrakseNvl = Character("Abrakse", kind=nvl)
 #Flags
 default TrioLore = False
 default CaimilPunch = False
+default FightAverted = False
 default UkhroLore = False
 default ArtShare = False
 default OkraPunch = False
@@ -748,4 +749,425 @@ label act1part3:
 
     "Faerie" "Has us by the throat. Proverbially and literally speaking."
 
-    "Faerie" "And she wants what you have, all of it. Preferably by way of extreme and unreasonable levels of force."
+    "Faerie" "And she wants what you have, all of it. Preferably by way of curb stomping."
+
+    ainhra "So that's how it's gonna be then? You're not even gonna try and figure something out?"
+
+    "Hobgoblin" "Like I said, I'm not taking my chances with her!"
+
+    "As Ainhra and the Hobgoblin girl continue their exchange, Okra notices the Faerie girl thinking about something."
+
+    "Whatever could it be?"
+
+    menu:
+
+        "Okra: *Let her think.*":
+            jump CaimilPunchRoute
+
+        "Okra: Then I guess we're done talking?":
+            jump FightScenePreamble
+
+
+label CaimilPunchRoute:
+
+    $ CaimilPunch = True
+
+    "You give the Faerie a bit more time to finish her thoughts as the other two continue to argue, and then..."
+
+    "Faerie" "Zirkli?"
+
+    zirkli "Yeah?"
+
+    "Faerie" "I need you to punch me in the face!"
+
+    zirkli "Wh- Caimil, no I- Why?!"
+
+    caimil "Think about it! As long as we make it {i}look{/i} like we got our butts kickked and make it {i}look{/1} like we actually tried, we could get out of this!"
+
+    caimil "{i}Besides,{/i} I turned out fine after the first time!"
+
+    zirkli "That was an ACCIDENT! I didn't {i}want{/i} to hit you!"
+
+    caimil "But everything still turned out fine! And none of us here want to fight so..."
+
+    zirkli "Look I get the bizarre logic behind this plan but I just... No..."
+
+    caimil "..."
+
+    caimil "Orc! What's your name?"
+
+    okra "It's Okra?"
+
+    caimil "Okra! I need you to punch me in the face!"
+
+    okra "But I don't want to either!"
+
+    caimil "Aw come on! Just pretend I'm trying to stab you or something!"
+
+    okra "But you aren't?!"
+
+    zirkli "Caimil you're made of glass please don't make him punch you."
+
+    caimil "It's either I get hurt or everyone here gets hurt it's basic utilitarianism!"
+
+    zirkli "Caimil {i}please...{/i}"
+
+    "As Okra's eyes dart around in confusion and slight panic, he spots some weak looking bricks in the wall."
+
+    "Maybe... You could get Caimil to reconsider that way?"
+
+    "It {i}will{/i} hurt though."
+
+    menu:
+
+        "Okra: *Punch the bricks."
+
+        "Okra: Look I'd rather just fight this out.":
+            jump SparStart
+
+    "You take in a deep breath and clear your head."
+
+    "Without even thinking, you punch the bricks with all the might you can muster. Reducing them to power and chunks of rock."
+
+    okra "You see what you're dealing with here?"
+
+    "The pain hits your right hand all at once, as does the bleeding. To call this unpleasant would be putting it lightly."
+
+    okra "Ow. Nhg. Ow. Owowowowowowowow......"
+
+    okra "Please don't make me do this again... I don't think I can handle another one."
+
+    caimil "..."
+
+    caimil "{i}Okay you have a point.{/i}"
+
+    zirkli "*Sigh...* Alright fine... I'll do it."
+
+    caimil "Woo!"
+
+    zirkli "Just hold still..."
+
+    "Caimil holds her hands behind her back."
+
+    zirkli "You ready?"
+
+    caimil "Yup!"
+
+    zirkli "One. Two..."
+
+    "Zirkli winds up her right arm for the punch."
+
+    zirkli "Three!"
+
+    "A loud, dull thud reverberates through the sewers as Zirkli's blow connects with Caimil's face. Followed by the sound of her falling to the ground."
+
+    "It {i}looks{/i} pretty bad, her left eye is starting to swell and there's a bit of brusing too."
+
+    "But Caimil looks pleased with the outcome."
+
+    "The same can't be said for Zirkli."
+
+    "And everyone else."
+
+    ainhra "Are you okay?"
+
+    caimil "Yeah! And no. But mostly yeah!"
+
+    caimil "It's nothing my mom can't patch up. Don't worry."
+
+    zirkli "Caimil... Are you sure this is going to work?"
+
+    caimil "Positive!"
+
+    caimil "And besides, Lyrdae's cool, I'm sure she can vouch for us!"
+
+    okra "Lyrdae?"
+
+    caimil "Oh her? I thought you knew her."
+
+    caimil "Drow, bangs and a ponytail, leather jacket?"
+
+    "She's one of your pursuers, along with the other two."
+
+    okra "Wait her! Yeah she was also trying to chase me down!"
+
+    ainhra "Same!"
+
+    caimil "Look, she'd rather be doing anything else right now, same with the other two."
+
+    caimil "So I'm sure she can think of a way to spin this so nobody gets hurt!"
+
+    ainhra "So you're sure we're gonna be fine?"
+
+    caimil "I'm certain!"
+
+    "Everyone breathes a collective sigh of relief, knowing that nobody has to fight."
+
+    $ FightAverted = True
+
+label SparStart:
+
+    okra "Look I'd rather just fight this out."
+
+    okra "I know you don't want anyone else to get hurt but I just can't bring myself to do it."
+
+    okra "Although..."
+
+    "Everyone's eyes are on Okra."
+
+    okra "We could just fight, and leave each other be after?"
+
+    okra "Mess each other up? Make it look convincing?"
+
+    "Zirkli takes notice."
+
+    zirkli "Now {i}that{/i} I can do."
+
+    ainhra "Wait we're actually doing this?"
+
+    okra "Yup!"
+
+    "Okra and Zirkli prepare themselves for a fight, a smirk on both their faces."
+
+    zirkli "Just don't hold back alright?"
+
+    okra "Wasn't planning on it."
+
+    "Ainhra looks to Caimil, he just shrugs, as does she."
+
+    caimil "I mean... Since we're here."
+
+    ainhra "And {i}you{/i} still need to look the part right?"
+
+    caimil "Yep. Just don't go overboard okay?"
+
+    ainhra "I couldn't even if I tried."
+
+    "The other two awkwardly prepare their magics for one of the duels of all time."
+
+    jump FightStart
+
+label FightScenePreamble:
+
+    okra "Then I guess we're done talking?"
+
+    "Hobgoblin" "I guess we are."
+
+    "Everyone steels themselves for a brawl, it's either gonna be you, or them."
+
+    "Though for you Ainhra, you swear you could see your friend and the Hobgoblin grinning."
+
+    "Okra and the Hobgoblin lunge for each other, you ready yourself for whatever the Faerie has in store."
+
+    "FIGHT TIME GOGOGOGOGO"
+
+
+label FightStart:
+
+    nvl show dissolve
+
+    nvlNar "Welcome to The Fight Scene(tm)"
+
+    nvlNar "While there's one big fight happening, Ainhra and Okra have their own duels to deal with."
+
+    nvlNar "And you can only focus on one fight, for sanity reasons."
+
+    nvlNar "So, who will you focus on?"
+
+    menu (nvl=True):
+
+        "Ainhra":
+            nvlNar "The Half-Elven wizard it is!"
+            jump AinhraFight
+
+        "Okra":
+            nvlNar "The Orcish barbarian it is!"
+            jump OkraFight1
+
+
+label OkraFight1:
+
+    nvlNar "Okra takes a swing at the incoming hobgoblin but she swiftly didges out of the way."
+
+    nvlNar "The hobgoblin jabs at his gut, and Okra responds with a headbutt. Both are knocked away from each other."
+
+    nvlNar "The hobgoblin retakes the initiative as she surges towards him, she goes for a sweeping motion which forces Okra to brace himself and block low."
+
+    nvlNar "But as her swing starts, her leg arcs up and Okra gets kicked in the face. {i}Hard.{/i}"
+
+    nvlNar "Okra is reeling from the impact and nearly stumbles over but manages to regain his footing before Zirkli closes the gap."
+
+    nvlNar "What next?"
+
+    menu(nvl=True):
+
+        "Brace for Impact":
+            jump OkraFight2
+
+        "Go for her hair. (Unfinished)":
+            jump OkraDirty1
+
+label OkraFight2:
+
+    nvlNar "He puts up his arms and braces himself for the worst. And within moments a hailstorm of punches make their way to him."
+
+    nvlNar "No matter what you try to do you can't seem to block anything, and its wearing on you fast."
+
+    nvlNar "You need look for an opening, or make one."
+
+    nvlNar "You wait for the slightest lapse in her assault and shove her away from you."
+
+    nvlNar "What next?"
+
+    menu(nvl=True):
+
+        "Uppercut her now!":
+            jump OkraLose
+
+        "Get in close.":
+            jump OkraWin
+
+
+label OkraLose:
+
+    nvlNar "Okra tries to go for a killing blow, an uppercut with everything he has."
+
+    nvlNar "But he's too far, and she has plenty of time to react. And now you're left wide open."
+
+    nvlNar "Before he even has time to register how bad of a position he's in, he takes a kick to the kidney, one to the stomach and a final one to the head. Knocking hom to the floor."
+
+    nvlNar "You surrender, as does Ainhra as he sees that you've been bested."
+
+    if CaimilPunch:
+        nvlNar "You were so close! But alas, you whiffed."
+        jump OkraPostLoseSpar
+
+    else:
+        nvlNar "You prepare for the worst as the hobgoblin looms above you."
+        jump OkraPostLose
+
+label OkraPostLoseSpar:
+
+    "Zirkli extends a hand to Okra and he takes it, letting her hoist him up to his feet."
+
+    
+
+label OkraWin:
+
+    nvlNar "Your turn."
+
+    nvlNar "You get right into her face, trying to jab you but you're prepared this time."
+
+    nvlNar "With your left hand you grab her arm and pull her towards you."
+
+    nvlNar "And with your right, you put all your strength into a single, fight ending uppercut."
+
+    nvlNar "You outpace her, giving her no time to react."
+
+    nvlNar "BAM!"
+
+    nvlNar "She's knocked onto the floor with a clack that echoes through the sewers. Dazed and disoriented."
+
+    nvlNar "She surrenders, knowing she can't pull this back from here."
+
+    nvlNar "And once the Faerie sees her friend on the floor, she gives up as well."
+
+    nvlNar "You thought yourself a skilled fighter, but she really pushed you to the limit. Keeping you on the defensive constantly."
+
+    nvlNar "Okra offerrs her a hand up, but she declines and hoists herself onto her feet."
+
+    nvlNar "But as she gets back up, one thought is reverberating through his mind."
+
+    okraNvl "(Holy crap that fake-out was so {i}fucking{/i} cool!)"
+
+    if CaimilPunch == True:
+        jump OkraPostSpar
+        
+    else:
+        jump OkraPostWin
+
+
+label OkraPostWin:
+
+    "Hobgoblin" "Well. Thanks for not stomping my face in! Appreciate it."
+
+    okra "I mean I already won, and that's not how I do things, you know?"
+
+    "Hobgoblin" "Ye' know what? That's fair."
+
+    okra "Besides, you want to get out of here to right? Uh... I didn't get your name."
+
+    "Hobgoblin" "Yeah I'd rather be home right now. Or anywhere else."
+
+    zirkli "And it's Zirkli, nice to meet you to uh..."
+
+    okra "Okra!"
+
+    zirkli "Gotcha."
+
+    zirkli "Still, we're gonna be in some serious shit now. Ugh."
+
+    "Faerie" "I mean... You do look pretty battered Zirkli."
+
+    zirkli "You look worse for wear too Caimil but... What are you getting at exactly?"
+
+    caimil "We could just {i}pretend{/i} that they just got one over us! Say they were just too much for us!"
+
+    zirkli "That sounds cool but, are you sure this is gonna work?"
+
+    caimil "I mean the boss is insane but Kaii and her friends are alright. I'm sure they'll let us off the hook."
+
+    okra "You sure?"
+
+    caimil "For the most part yeah!"
+
+    "Everyone breathes a collective sigh of relief, nobody has to get curb stomped woo!"
+
+label OkraPostSpar:
+
+    okra "Hey? You alright?"
+
+    zirkli "Enough... You?"
+
+    okra "I'm good."
+
+    okra "Man, I haven't had a brawl like that in a while!"
+
+    zirkli "Really? {i}You{/i} get into fights often?"
+
+    okra "Not on the streets but yeah. Clan duels at the rec center and all that."
+
+    zirkli "Ah, now that makes sense."
+
+    okra "One thing though..."
+
+    zirkli "Hm?"
+
+    okra "..."
+
+    okra "How did you do that kick to the face? {i}I wanna know!{/i}"
+
+    zirkli "Wait really?"
+
+    okra "Yeah dude that was so sicK!"
+
+    zirkli "Huh! Nobody really asks me about this sort of thing. Usually they just call me a bitch."
+
+    okra "I mean you really got me good, and I wanna see if I can pull it off myself."
+
+    okra "Nobody can really keep up with me, but it doesn't hurt to widen the gap."
+
+    zirkli "Heh! Maybe later, you know where Iron Lion is right?"
+
+    okra "Oh there? Yeah I go there every other weekend, mostly for cardio though."
+
+    zirkli "Then I can expect you to show right?"
+
+    okra "Oh absolutely!"
+
+    ainhra "Hey are you guys done gawking at each other?"
+
+    okra "Ah! Sorry!"
+
+    "Zirkli rolls her eyes."
+
