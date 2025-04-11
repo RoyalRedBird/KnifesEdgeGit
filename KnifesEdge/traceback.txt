@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 273, in script
-    Orc "Ow..."
-Exception: Sayer 'Orc' is not defined.
+  File "game/script.rpy", line 533, in script
+    nvlNAr "And yapping..."
+Exception: Sayer 'nvlNAr' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 273, in script
-    Orc "Ow..."
+  File "game/script.rpy", line 533, in script
+    nvlNAr "And yapping..."
   File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
   File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
     who = eval_who(self.who, self.who_fast)
   File "E:\RenPy\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Orc' is not defined.
+Exception: Sayer 'nvlNAr' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 KnifesEdge 1.0
-Thu Apr  3 23:23:03 2025
+Thu Apr 10 23:18:05 2025

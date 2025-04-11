@@ -47,115 +47,6 @@ default OkraPunch = False
 default ZirCaiEpilogue = False
 default TrioEpilogue = False
 
-
-# The game starts here.
-
-#Story Layout:
-#Ainhra Prologue/Okra Prologue
-
-#ACT 1----------------------------------------------------------------------------------------------------------
-
-#Act 1-1 Okra and Ainhra run into each other.
-#Act 1-2 The two geek out a bit about what shows they like, Ainhra shows off.
-    #Bad Ending 1 - Okra mocks Ainhra, both get mad.
-
-#Act 1 Fight
-#Preamble, and Caimil thinking.
-    #Caimilpunch branches from here. Set CaimilPunch flag to true.
-    #If Okra convicnes Zirkli to make the punch, skip to the post-fight.
-        #Set CrisisAverted flag to true.
-    #If not, the fight commences, though with the knowledge that everybody will walk away from this.
-        #Set SparFight flag to true.
-
-#Multiple bad endings can be achieved if either Ainhra or Okra fight dirty, win or lose its a bad ending.
-
-#After the fight, the four chat. The party can ask the two about their bosses/your pursuers.
-    #If the player does ask about this, set the TrioLore flag to true.
-#If the CaimilPunch route was taken, the party can ask about how this wasn't the first time Zirkli punched Caimil in the face.
-    #It's a whole thing about VR headsets, Caimil thinks its funny, Zirkli does not.
-
-#The two point the party towards a possible exit and wish the two well, end of Act 1.
-
-#ACT 2-------------------------------------------------------------------------------------------------------
-
-#Ainhra asks Okra about how he basically became a different person when fighting.
-#Okra talks about this masculine facade, goes into a huge rant about masking, outs himself as Autistic.
-#Okra is embarassed, but Ainhra can relate, not 1 to 1 but enough.
-#Okra puts on a mask of stoic, cold, "Orcish" masculinity so that nobody bothers him or mocks him for being on the spectrum.
-#Ainhra hides behind his work because he's had his fair share of getting called cringe, on top of parent's that aren't big fans of his medium.
-
-#Ainhra rembers his friend Ukhro, how he got own-zoned by someone that seems like Okra's facade.
-#If Ainhra brushes off the question, they continue walking through the subway tunnels.
-
-#If Ainhra asks about it, set the UkhroLore flag to true.
-    #Turns out Okra was that kid, and Ukhro did fairly well for himself, fighting for a grand total of 15 seconds.
-    #And it also turns out Ukhro is really big into art himself, though more of a Disney kind of person.
-    #He's also pretty cool and Okra is mesmerized, the two talk about how Okra could meet him.
-
-#Suddenly, train.
-#The two dodge out of the way, Ainhra is more or less fine, Okra is having a meltdown from all the noise and stress.
-#Time runs short but Ainhra can't just get him to move in this state, not that he blames him.
-
-#Ainhra can either wait for Okra to compose himself, or try and get him to move now.
-    #If he tries the latter, Okra lashes out from all the everything and runs away. Okra especially is quite devastated. Bad Ending.
-
-#If Ainhra waits, he gives Okra some space and time to breathe, eventually he's in a state to get out of the tunnels.
-#Okra is deeply embarassed at letting Ainhra see him like this, but Ainhra doesn't mind.
-#Okra is genuinely touched by his compassion, also, they start to feel a draft. A possible exit!
-
-#ACT 3---------------------------------------------------------------------------------------------------------
-
-#Welcome to the Catacombs.
-#Ainhra's sketching away in his shetchbook, despite the lack of light.
-#Okra's watching along, mostly because its cool but also its a nice distraction from all the skulls.
-#Ainhra asks if Okra draws, Okra isn't sure he wants to answer, his art isn't good and he gave up a few weeks ago.
-#If Okra lies and says he doesn't, Ainhra is a bit disappointed, but they move on.
-
-#If Okra does share his art, he's hesitant, but he does show off some of the screecaps he has of his sketchbook.
-    #Set the ArtShare flag to true.
-    #Okra prepares for the worst, but to his surprise, Ainhra's rather appreciative, it's not a masterwork but its a good start!
-    #Okra mentions he want's to draw but he's worried it'll still look bad, Ainhra does everything he can to get him to start again.
-    #IT WORKS!
-    #Oh hey the exit!
-
-#Oh no the mean girl trio finally caught up to them.
-#The demon girl starts trying to get into Ainhra's head.
-#The trio reveals themselves, Abrakse being held up by Lyrdae, and Kaii looking especially desperate.
-
-#If the TrioLore flag is true, Okra can mention that they know why they're here, much to the surprise of Kaii.
-    #They'd rather be anywhere else right now, but their boss has her, her friends and her family by the throat.
-    #It's either gonna be them, or you, and it isn't gonna be you.
-    #Kaii's friends are also with her to the bitter end.
-
-#PSYCHIC BOSS BATTLE COMMENCE
-#Ainhra needs to keep his resolve up in order to avoid getting possessed.
-#Most of your ways of keeping your resolve up come from taking the social paths earlier in the game.
-    #Mainly the UkhroLore and ArtShare flags, those unlock the best paths.
-
-#If Ainhra breaks, Abrakse possesses him and helps Kaii beat Okra to a pulp.
-    #Ainhra feels terrible about letting Okra down like this, they both part ways broken and defeated. Bad Ending.
-    #If Ainhra holds out long enough, Okra wins and puts the other two on the backfoot, Lyrdae puts herself between Okra and Abrakse.
-    #The trio leave them be after being defeated.
-
-#If Ainhra manages to break Abrakse's hold on him, the psychic backlash causes Abrakse to reel and collapse to the floor in agony.
-    #Kaii rushes over to her to make sure she's okay, Abby is barely holding on. Kaii is utterly terrified.
-    #She needs to collect, but she can't fight like this and she can't leave Abby like this.
-    #Lyrdae asks Kaii to consider cutting their losses, but between Abby and the stress of pissing off her boss, she claws at Lyrdae's face.
-    #Kaii draws blood, much to her horror.
-    #Kaii asks the duo to get out of here and let them be.
-    #The two part ways, the trio fleeing into the catacombs and the duo ascending the ladder.
-
-#FREEDOM!
-
-#If both the UkhroLore and ArtShare flags are true, Ainhra asks Okra to tag along with him to grab his art tablet and shop art supplies.
-    #Okra accepts, friendship formed! TRUE ENDING.
-
-#Otherwise, the two wish each other well and part ways. They probably won't talk to each other again. NEUTRAL END.
-
-
-
-
-
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -174,11 +65,11 @@ label start:
 
     "Welcome to Knife's Edge!"
 
-    "Before we begin, a few conent warnings for the audience..."
+    "Before we begin, a few content warnings for the audience..."
 
     "This game contains the following: "
 
-    "Violence against/between minors. \nDepictions of sensory overload. \nMishandling of sensory overload. \nDemonic posession. \nThe R-Slur."
+    "Violence against/between minors. \nDepictions of sensory overload. \nMishandling of sensory overload. \nDemonic possession. \nThe R-Slur."
 
     "With that out of the way..."
 
@@ -232,8 +123,6 @@ label okraPrologue:
     "You push your blanket off of you, the cool of your air-conditioned room washes over your skin, its refreshing if a slight jolt to the senses."
 
     "Your room on the other hand is bathed in the 9AM glow of the sun. Perfectly lit without the need to turn on your light."
-
-    
 
 
 label ainhraPrologue:
@@ -341,7 +230,7 @@ label act1part1:
 
     okra "Please tell me you have something I've been stuck here for half an hour and I'm still lost."
 
-    ainhra "Well I don't exactly know where I am either but I think I passed by an enterance to the sewers?"
+    ainhra "Well I don't exactly know where I am either but I think I passed by an entrance to the sewers?"
 
     "Okra tenses up at the thought of having to even be in the sewers."
 
@@ -526,7 +415,7 @@ label badend1:
 
     nvl show dissolve
 
-    nvlNar "As the temprary bond between the two kids breaks down at lightspeed, they storm away from each other in a huff."
+    nvlNar "As the temporary bond between the two kids breaks down at light-speed, they storm away from each other in a huff."
 
     nvlNar "Okra heads back to the access corridors, Ainhra heads further into the sewers."
 
@@ -565,7 +454,7 @@ label act1part3:
 
     "Ainhra shows off all of his recent work to Okra, swiping through dozens of his illustrations."
 
-    "A lot of it is very Studio Trigger-esque, with only one or two 'realistic' portraits to see."
+    "A lot of it is very Studio Trigger-esque, with only one or two 'realistic' portraits to see. Self-portraits to be precise."
 
     "Okra, simply put, is mesmerized."
 
@@ -575,7 +464,7 @@ label act1part3:
 
     "Ainhra opens up another app, an online comic hosting site. Luckily it still runs offline."
 
-    "He pulls up a manga by the name of 'Starswirl vs. The End of Time' a maagical girl sort of thing with some light eldritch trappings."
+    "He pulls up a manga by the name of 'Starswirl vs. The End of Time' a magical girl sort of thing with some light eldritch trappings."
 
     "A manga illustrated by {i}Ainhra Sydrillen.{/i}"
 
@@ -597,7 +486,7 @@ label act1part3:
 
     ainhra "Like, you know... What do you get up to?"
 
-    okra "I mean... I know this sounds pretty stereotypical of me but I'd say I'm pretty good at dueling."
+    okra "I mean... I know this sounds pretty stereotypical of me but I'd say I'm pretty good at fightin'."
 
     ainhra "Ooo..."
 
@@ -635,13 +524,11 @@ label act1part3:
 
     nvl show dissolve
 
-    nvlNar "As the two make their way through the sewers, they continue to yap about animation, their favorite shows, and the state of the Walt Company."
+    nvlNar "As the two make their way through the sewers, they continue to yap about the shows they like to spend hours binging at 1AM. And they just keep yapping."
 
-    nvlNar "And yap."
+    nvlNar "And yapping."
 
-    nvlNAr "And yap..."
-
-    nvlNar "{i}And yap...{/i}"
+    nvlNar "And yapping..."
 
     nvlNar "And it keeps going for a while..."
 
@@ -681,7 +568,7 @@ label act1part3:
 
     "Hobgoblin" "Crossing her is a bad idea and I really don't want to go back to juvie again, {i}especially{/i} if it's 'cause of her."
 
-    "Faerie" "That's true. {i}Ugh.{/i}"
+    "Faerie" "That's true. {i}Ngh.{/i}"
 
     "Faerie" "I just don't want to get into any more trouble than we have to okay?"
 
@@ -691,11 +578,11 @@ label act1part3:
 
     "Faerie" "I know. But at least I'm stuck here with you!"
 
-    "Hobgoblin" "And I woudn't want it any other way."
+    "Hobgoblin" "And I wouldn't want it any other way."
 
     "From what you two can gather, it looks like they want to be down here as much as you."
 
-    "Not at all."
+    "Which is to say, not at all."
 
     okra "Maybe... We could talk to them? Try and bargain our way out of this?"
 
@@ -711,7 +598,7 @@ label act1part3:
 
     "With their minds made up, they make their approach."
 
-    "And the two girls don't look particularlly thrilled to see them."
+    "And the two girls don't look particularly thrilled to see them."
 
     "Hobgoblin" "Ah crap..."
 
@@ -749,7 +636,7 @@ label act1part3:
 
     "Faerie" "Has us by the throat. Proverbially and literally speaking."
 
-    "Faerie" "And she wants what you have, all of it. Preferably by way of curb stomping."
+    "Faerie" "And she wants what you have, all of it. Preferably by way of a good curb stomping."
 
     ainhra "So that's how it's gonna be then? You're not even gonna try and figure something out?"
 
@@ -782,7 +669,7 @@ label CaimilPunchRoute:
 
     zirkli "Wh- Caimil, no I- Why?!"
 
-    caimil "Think about it! As long as we make it {i}look{/i} like we got our butts kickked and make it {i}look{/1} like we actually tried, we could get out of this!"
+    caimil "Think about it! As long as we make it {i}look{/i} like we got our butts kicked and make it {i}look{/1} like we actually tried, we could get out of this!"
 
     caimil "{i}Besides,{/i} I turned out fine after the first time!"
 
@@ -798,13 +685,15 @@ label CaimilPunchRoute:
 
     okra "It's Okra?"
 
+    caimil "..."
+
     caimil "Okra! I need you to punch me in the face!"
 
     okra "But I don't want to either!"
 
     caimil "Aw come on! Just pretend I'm trying to stab you or something!"
 
-    okra "But you aren't?!"
+    okra "But you aren't though?!"
 
     zirkli "Caimil you're made of glass please don't make him punch you."
 
@@ -820,14 +709,18 @@ label CaimilPunchRoute:
 
     menu:
 
-        "Okra: *Punch the bricks."
+        "Okra: *Punch the bricks.*":
+            jump BrickPunch
 
         "Okra: Look I'd rather just fight this out.":
             jump SparStart
 
+
+label BrickPunch:
+
     "You take in a deep breath and clear your head."
 
-    "Without even thinking, you punch the bricks with all the might you can muster. Reducing them to power and chunks of rock."
+    "Without even thinking, you punch the bricks with all the might you can muster. Reducing them to powder and chunks of rock."
 
     okra "You see what you're dealing with here?"
 
@@ -861,7 +754,7 @@ label CaimilPunchRoute:
 
     "A loud, dull thud reverberates through the sewers as Zirkli's blow connects with Caimil's face. Followed by the sound of her falling to the ground."
 
-    "It {i}looks{/i} pretty bad, her left eye is starting to swell and there's a bit of brusing too."
+    "It {i}looks{/i} pretty bad, her left eye is starting to swell and there's a bit of bruising too."
 
     "But Caimil looks pleased with the outcome."
 
@@ -905,6 +798,8 @@ label CaimilPunchRoute:
 
     $ FightAverted = True
 
+    jump AfterFight
+
 label SparStart:
 
     okra "Look I'd rather just fight this out."
@@ -917,7 +812,7 @@ label SparStart:
 
     okra "We could just fight, and leave each other be after?"
 
-    okra "Mess each other up? Make it look convincing?"
+    okra "Mess each other up and make it look convincing you know?"
 
     "Zirkli takes notice."
 
@@ -974,20 +869,203 @@ label FightStart:
 
     nvlNar "So, who will you focus on?"
 
+    nvl clear
+
     menu (nvl=True):
 
         "Ainhra":
             nvlNar "The Half-Elven wizard it is!"
-            jump AinhraFight
+            jump AinhraFight1
 
         "Okra":
             nvlNar "The Orcish barbarian it is!"
             jump OkraFight1
 
+label AinhraFight1:
+
+    nvlNar "The Faerie tries to knock Ainhra off his feet by disturbing the concrete beneath his, but he swiftly steps out of the way."
+
+    nvlNar "He tries to retaliate by sending a hail of magical darts hurdling towards her, but she disappears in the blink of an eye only to reappear elsewhere the next, dodging his move."
+
+    nvlNar "He tries sending another barrage towards her, but now he's the one caught off guard as she shifts up the ground beneath his feat, sending him stumbling into a wall."
+
+    nvlNar "And as you come to a halt, a weave of magical vines sprout from the cracks in the tunnel ensnaring you."
+
+    nvlNar "The vines are dotted with small flowers that span the entire color wheel, and they smell quite pleasant, you even feel yourself start to drift asleep."
+
+    nvlNar "He should probably figure something out before he dozes off."
+
+    nvlNar "The only spell you can pull off now would be to materialize an ethereal hand, but what should he use it with?"
+
+    nvl clear
+
+    menu (nvl=True):
+
+        "There's a brick on the floor, that seems usable.":
+            jump AinhraDirty
+
+        "Slap her in the face.":
+            jump AinhraFight2
+
+label AinhraFight2:
+
+    nvlNar "Using what willpower he has left, he materializes a hand made of raw magic."
+
+    nvlNar "And he uses said magic hand to slap her across the face."
+
+    nvlNar "The sound it makes was surprisingly loud, echoing throughout the tunnels."
+
+    nvlNar "And with that slap her concentration lapses long enough for the vines to stop putting him to sleep. Now's his chance!"
+
+    nvlNar "Think fast!"
+
+    menu (nvl=True):
+
+        "Mage Bolt into the Faerie's face.":
+            jump AinhraWin
+
+        "Mage Bolt into the vines.":
+            jump AinhraLose
+
+label AinhraWin:
+
+    nvlNar "Using this window of opportunity, he sends one final hail of darts into the Faeries face, and all of them manage to hit their mark this time."
+
+    nvlNar "The Faerie is knocked to the floor, her hands cupping one of her eyes and she cusses the pain away."
+
+    nvlNar "He probably got his eye, a realization that makes him cringe a little bit."
+
+    nvlNar "As the vines around Ainhra fade away into nothing and the Hobgoblin notices her friend on the floor, she surrenders."
+
+    if CaimilPunch:
+        nvlNar "Maybe he did end up going overboard..."
+        jump AinhraPostSpar
+
+    else:
+        nvlNar "Though he did win, he rushes over to the Faerie to make sure they're okay."
+        jump AinhraPostWin
+
+label AinhraPostSpar:
+
+    ainhra "Caimil right? Are you okay?!"
+
+    nvlNar "Ainhra gets a good look at her eye, it doesn't look pretty."
+
+    caimil "Yeah but no but... I'm good."
+
+    caimil "It's nothing my mom can't figure out, besides, the black eye'll definitely help our case!"
+
+    ainhra "I guess so but... I still feel icky about that."
+
+    caimil "Dude it's fine, don't worry about it!"
+
+    caimil "Smooth moves by the way!"
+
+    ainhra "Yeah! Uh, you too."
+
+    nvlNar "The conversation kind of dies as neither are really fighting types, they rarely use their magic like this as it is, if at all."
+
+    nvlNar "Meanwhile Okra and Zirkli are chatting up a storm, analyzing their fight and figuring out what went right and wrong for the both of them."
+
+    nvlNar "It would be fascinating if either of them were into this stuff, and it's still kind of interesting to listen in on."
+
+    ainhra "So uh... Want to interrupt?"
+
+    caimil "Nah, might as well catch a break while they're talking."
+
+    ainhra "I guess that sounds good."
+
+    nvlNar "The two rest until the Orc and the Hobgoblin are done talking about how best to beat the other and eventually the convo does end."
+
+    nvlNar "Now for other things!"
+
+    jump AfterFight
+
+label AinhraPostWin:
+
+    ainhra "Hey! Are you okay! I didn't mean to hurt you that bad I swear!"
+
+    nvlNar "The Faerie turns to you, her left hand covering up a blackened swollen eye."
+
+    "Faerie" "..."
+
+    "Faerie" "A slap... Really?"
+
+    ainhra "Huh? Wh-"
+
+    "Faerie" "Why must you humiliate me with such a low blow?!"
+
+    ainhra "Wait, I'm sorry?!"
+
+    "Faerie" "You disgrace me with such a brutish maneuver! I would have preferred it if you just threw a brick at my skull!"
+
+    "Faerie" "Hmph!"
+
+    nvlNar "She turns away in a huff."
+
+    ainhra "Well... I'm sorry I slapped you in the face. I was just trying to get you to lay off without fracturing your skull."
+
+    ainhra "It was the best I could come up with in a split second and-"
+
+    nvlNar "Ainhra sees her starting to chuckle, the facade of indignation cracking."
+
+    ainhra "Hey!"
+
+    nvlNar "She bursts into laughter."
+
+    "Faerie" "Heh! You should have seen the look on your face!"
+
+    "Faerie" "But yeah! I was just screwing with you."
+
+    ainhra "What? So you aren't actually bothered about the slap?"
+
+    "Faerie" "Nah! I thought it was kinda funny actually!"
+
+    ainhra "Well that's a relief but... Your eye..."
+
+    "Faerie" "Ah yeah that. Yeah it's bad but I think I can make this work for all of us!"
+
+    "Faerie" "Besides, it's nothing a healing balm and some sleep can't fix."
+
+    ainhra "That's good, but how are you going to make this work?"
+
+    "Faerie" "Well, our boss is insane, a power hungry freak who will stop at nothing to make sure everyone fears her."
+
+    "Faerie" "But our friends, the ones after you, they're much more reasonable."
+
+    "Faerie" "They don't want to be here either but they have a beating quota to fulfil."
+
+    "Faerie" "But if we can tell them that you got one over us, they'll probably let us go."
+
+    "Faerie" "And this black eye is our ticket!"
+
+    "Faerie" "So uh... Thanks! In a bizarre way."
+
+    ainhra "You're welcome! Uh..."
+
+    "Faerie" "Ah! Forgot to introduce myself."
+
+    caimil "I'm Caimil! And my friend over there is Zirkli!"
+
+    caimil "We've been friends since like, kindergarten so where she goes, I go. And vice versa."
+
+    caimil "But yeah! Sorry we had to run into each other like this."
+
+    ainhra "It's fine, it could be worse."
+
+    caimil "True! But don't jinx it."
+
+    nvlNar "He and Caimil share her plan to get out of this without having to fight one another, and much to her delight, Okra and Zirkli are quite receptive."
+
+    nvlNar "Them having beaten each other up also helps with her plan, so that's good."
+
+    nvlNar "In the end, crisis averted!"
+
+    jump AfterFight
 
 label OkraFight1:
 
-    nvlNar "Okra takes a swing at the incoming hobgoblin but she swiftly didges out of the way."
+    nvlNar "Okra takes a swing at the incoming hobgoblin but she swiftly dodges out of the way."
 
     nvlNar "The hobgoblin jabs at his gut, and Okra responds with a headbutt. Both are knocked away from each other."
 
@@ -999,13 +1077,94 @@ label OkraFight1:
 
     nvlNar "What next?"
 
+    nvl clear
+
     menu(nvl=True):
 
         "Brace for Impact":
             jump OkraFight2
 
-        "Go for her hair. (Unfinished)":
+        "Go for her hair.":
             jump OkraDirty1
+
+
+    label OkraDirty1:
+
+        nvlNar "In a desperate gambit to get the upper hand, you lunge for her hair and pull on it as hard as you can."
+
+        nvlNar "As you yank on her hair she screams and shouts, her cries and curses echoing throughout the tunnels."
+
+        nvlNar "She tries to claw back control, to get you on the back foot, but you maintain your footing regardless."
+
+        nvlNar "After a few more moments of struggle you manage to grab one of her arms, and you decided to put all your strength into one big throw."
+
+        nvlNar "But what will you throw the hobgoblin at? Or who?"
+
+        nvl clear
+
+        menu(nvl=True):
+
+            "The Faerie":
+                jump BadEnd2
+
+            "The Wall":
+                jump BadEnd3
+
+    label BadEnd2:
+
+        nvlNar "You throw the Hobgoblin into the faerie, sending both of them crashing into a wall. The faerie getting sandwiched in the process."
+
+        nvlNar "And to make sure that neither of them get back up, you slam yourself into the two, crushing both with your body weight."
+
+        nvlNar "The faerie is unconscious beneath the hobgoblin, and the hobgoblin herself is barely responsive. Unable to even spit curses at you, let alone get up."
+
+        nvlNar "You won. But you don't feel good about it in the slightest."
+
+        nvlNar "And when you look at Ainhra, you see a mix of reservation and fear in his eyes."
+
+        nvlNar "The brutality you displayed was too much for him to bear witness to."
+
+        nvlNar "And he leaves you behind, to find his own way out."
+
+        nvlNar "And as he disappears into the darkness, one thought enters your head."
+
+        nvlNar "You don't even blame him."
+
+        nvlNar "Bad Ending #2"
+
+        return
+
+    label BadEnd3:
+
+        nvlNar "You throw the hobgoblin into the concrete wall, her body making a resounding thud when it makes contact."
+
+        nvlNar "To put her out of commission for good, you try and slam into her with all your body weight."
+
+        nvlNar "But just before you reach her, the ground shifts and gives way, causing you to stumble and fall into the wall."
+
+        nvlNar "In one moment, you see Fae magic radiating from the Faerie's hand."
+
+        nvlNar "In the next moment, you see the Hobgoblin's boot over your head, and rage in her eyes."
+
+        nvlNar "And in the next, a flash of light, and then darkness."
+
+        nvlNar "..."
+
+        nvlNar "It felt like hours before you would once again regain consciousness."
+
+        nvlNar "Your face feels like its been beaten in with a sledgehammer, as does the rest of your body."
+
+        nvlNar "On top of that, your wallet and phone have been stolen from you."
+
+        nvlNar "And as your eyes slowly focus on the sewer grate leading outside, you are greeted by the pale moonlight above, and the sound of passing cars."
+
+        nvlNar "You, as well as Ainhra, are in a world of hurt. Literally, and metaphorically speaking."
+
+        nvlNar "But at least nobody is chasing you anymore."
+
+        "Bad Ending #3"
+
+        return
 
 label OkraFight2:
 
@@ -1018,6 +1177,8 @@ label OkraFight2:
     nvlNar "You wait for the slightest lapse in her assault and shove her away from you."
 
     nvlNar "What next?"
+
+    nvl clear
 
     menu(nvl=True):
 
@@ -1036,6 +1197,8 @@ label OkraLose:
 
     nvlNar "Before he even has time to register how bad of a position he's in, he takes a kick to the kidney, one to the stomach and a final one to the head. Knocking hom to the floor."
 
+    nvlNar "His head is rattling in his skull and he's in no position to fight like this. Especially after an onslaught like that."
+
     nvlNar "You surrender, as does Ainhra as he sees that you've been bested."
 
     if CaimilPunch:
@@ -1046,10 +1209,139 @@ label OkraLose:
         nvlNar "You prepare for the worst as the hobgoblin looms above you."
         jump OkraPostLose
 
+label OkraPostLose:
+
+    "Your heart pounds as you expect to have your face stomped into the cold concrete pressing against your hands."
+
+    "But to your surprise, she offers you a hand, a hand you timidly, but gladly accept."
+
+    okra "Why... didn't you finish me off?"
+
+    "Hobgoblin" "Look... You seem cool enough and you already know I don't want to be here."
+
+    "Hobgoblin" "If I'm honest... I'd rather be home knitting. I have a scarf at home that's like halfway done."
+
+    okra "Ooo that sounds nice actually!"
+
+    "Hobgoblin" "Understatement. Not only do I get to unwind, but I get a comfy scarf in the end."
+
+    okra "Sounds like a win-win if you ask me!"
+
+    "She smiles."
+
+    okra "But... What about your boss? You still have her to deal with."
+
+    "Hobgoblin" "I know... I'm sure I can think of someth-"
+
+    "Faerie" "No need! Have you two seen yourselves?"
+
+    "Hobgoblin" "Hm?"
+
+    okra "Huh?"
+
+    "You took quite the beating from her, bruising across your arms, some swelling in your right cheek too."
+
+    "But she didn't come out unscathed either. She's bruised up too."
+
+    "Hobgoblin" "I took a few hits yeah, but what does that have to do with anything?"
+
+    "Faerie" "You know, we could just say they messed us up and got away."
+
+    "Faerie" "Besides, the boss is insane but Kaii and her friends are alright. I'm sure they'll let us off the hook."
+
+    okra "You sure?"
+
+    "Faerie" "For the most part yeah!"
+
+    "Everyone breathes a collective sigh of relief, nobody has to get curb stomped woo!"
+
+    okra "By the way uh... I didn't get your name."
+
+    zirkli "It's Zirkli!"
+
+    "She then points to the faerie."
+
+    zirkli "And she's Caimil!"
+
+    zirkli "We go back for a {i}while.{/i}"
+
+    okra "I noticed!"
+
+    zirkli "Heh. Stalker."
+
+    okra "Hey! We were just trying to stay hidden. And gather intel and stuff."
+
+    zirkli "So stalking?"
+
+    okra "Shut up. :("
+
+    "She snickers."
+
+    zirkli "I'm just messing with ya'!"
+
+    okra "Ah! {i}I knew that... Definitely.{/i}"
+
+    okra "But uh... We're cool?"
+
+    zirkli "Yeah, we're cool."
+
+    jump AfterFight
+
 label OkraPostLoseSpar:
 
     "Zirkli extends a hand to Okra and he takes it, letting her hoist him up to his feet."
 
+    zirkli "You know? You weren't too bad."
+
+    zirkli "But that last hit was kinda-"
+
+    okra "Dumb?"
+
+    zirkli "Yup."
+
+    okra "I know. I guess I'm not used to just relying on my fists."
+
+    okra "I'm more of a sparring axe person. Bit more reach and a lot more punch."
+
+    okra "Not to mention I didn't even had time to think with that hail of punches you were putting out."
+
+    "She smirks."
+
+    okra "In the end, you got me really good. End of story. Well played!"
+
+    zirkli "Heh! Thanks! Most people don't usually compliment me after I kick them to the floor."
+
+    zirkli "{i}Usually they just call me a bitch.{/i}"
+
+    okra "But speaking of..."
+
+    zirkli "Hm?"
+
+    okra "How did you pull off that kick to the face? {i}That{/i} was sick."
+
+    zirkli "Wait really?"
+
+    okra "I didn't even see it coming! I could use a move like that!"
+
+    okra "Mostly at the rec center, not that anyone can really keep up with me."
+
+    okra "And you. I can't just leave this at 0-1 forever."
+
+    zirkli "That a challenge?"
+
+    okra "And a promise."
+
+    zirkli "Well if you really want to have another go, and you make it out of here intact, you free next Saturday? Iron Lion?"
+
+    okra "Sure! I go there anyway on Saturdays. Cardio y'know?"
+
+    zirkli "Then it's set then!"
+
+    caimil "Hey, I don't want to interrupt but are you two done planning on beating the crap out of each other?"
+
+    zirkli "We are, don't worry."
+
+    jump AfterFight
     
 
 label OkraWin:
@@ -1074,7 +1366,7 @@ label OkraWin:
 
     nvlNar "You thought yourself a skilled fighter, but she really pushed you to the limit. Keeping you on the defensive constantly."
 
-    nvlNar "Okra offerrs her a hand up, but she declines and hoists herself onto her feet."
+    nvlNar "Okra offers her a hand up, but she declines and hoists herself onto her feet."
 
     nvlNar "But as she gets back up, one thought is reverberating through his mind."
 
@@ -1123,6 +1415,8 @@ label OkraPostWin:
 
     "Everyone breathes a collective sigh of relief, nobody has to get curb stomped woo!"
 
+    jump AfterFight
+
 label OkraPostSpar:
 
     okra "Hey? You alright?"
@@ -1135,7 +1429,7 @@ label OkraPostSpar:
 
     zirkli "Really? {i}You{/i} get into fights often?"
 
-    okra "Not on the streets but yeah. Clan duels at the rec center and all that."
+    okra "Not on the streets but yeah. Inter-clan duels at the rec center and all that."
 
     zirkli "Ah, now that makes sense."
 
@@ -1149,13 +1443,13 @@ label OkraPostSpar:
 
     zirkli "Wait really?"
 
-    okra "Yeah dude that was so sicK!"
+    okra "Yeah dude that was so sick!"
 
     zirkli "Huh! Nobody really asks me about this sort of thing. Usually they just call me a bitch."
 
     okra "I mean you really got me good, and I wanna see if I can pull it off myself."
 
-    okra "Nobody can really keep up with me, but it doesn't hurt to widen the gap."
+    okra "Nobody can really keep up with me either way, but it doesn't hurt to widen the gap."
 
     zirkli "Heh! Maybe later, you know where Iron Lion is right?"
 
@@ -1170,4 +1464,8 @@ label OkraPostSpar:
     okra "Ah! Sorry!"
 
     "Zirkli rolls her eyes."
+
+    jump AfterFight
+
+label AfterFight:
 
